@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet IQDropDownTextField *intervalField;
 @property (strong, nonatomic) IBOutlet IQDropDownTextField *iconField;
 @property (strong, nonatomic) IBOutlet UISwitch *quantitySwitch;
+@property (strong, nonatomic) NSDateFormatter *dropDownDateFormatter;
 @end
 
 @implementation FMJCreateCustomHabitViewController
@@ -27,6 +28,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    self.dropDownDateFormatter = [[NSDateFormatter alloc] init];
+    [self.dropDownDateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    [self.dropDownDateFormatter setTimeStyle:NSDateFormatterNoStyle];
     
     [self.startDateField setInputAccessoryView:[self dropDownToolbar]];
     [self.startDateField setDropDownMode:IQDropDownModeDatePicker];
@@ -55,26 +60,31 @@
     NSNumber *weekInterval = [NSNumber numberWithInt:60 * 60 * 24 * 7];
     NSNumber *biweeklyInterval = [NSNumber numberWithInt:weekInterval.intValue * 2];
     
-    NSNumber *interval = weekInterval;
-    NSNumber *switchBool = [NSNumber numberWithBool:self.quantitySwitch.isOn];
-    //NSDate *startDate = [NSDate ]
-    
     FMJAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
     
-    NSManagedObject *newHabit = [NSEntityDescription insertNewObjectForEntityForName:@"Habit"
-                                                              inManagedObjectContext:context];
-    [newHabit setValue: self.titleField.text forKey:@"title"];
-    //[newHabit setValue: self.startDateField.text forKey:@"start_date"];
-    [newHabit setValue: interval forKey:@"interval"];
-    [newHabit setValue: switchBool forKey:@"requires_quantity"];
+    Habit *habit = [NSEntityDescription insertNewObjectForEntityForName:@"Habit"
+                                                 inManagedObjectContext:context];
+    
+    [habit setTitle:self.titleField.text];
+    [habit setStart_date:[self.dropDownDateFormatter dateFromString:self.startDateField.text]];
+    [habit setRequires_quantity:[NSNumber numberWithBool:self.quantitySwitch.isOn]];
+    
+    if ([self.intervalField.text isEqualToString:@"Weekly"]) {
+        [habit setInterval:weekInterval];
+    } else {
+        [habit setInterval:biweeklyInterval];
+    }
+    
     [self.titleField setText:@""];
     [self.startDateField setText:@""];
     [self.intervalField setText:@""];
+    [self.quantitySwitch setOn:NO];
+    
     [appDelegate saveContext];
 }
 
-- (void)doneClicked:(UIBarButtonItem*)button {
+- (void)doneClicked:(UIBarButtonItem *)button {
     [self.view endEditing:YES];
 }
 

@@ -222,15 +222,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Icon is most appropriate?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vs3-OU-ycZ">
-                                <rect key="frame" x="20" y="192" width="350" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you recording the Quantity?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iS7-XW-veL">
-                                <rect key="frame" x="20" y="259" width="350" height="21"/>
+                                <rect key="frame" x="20" y="192" width="350" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -257,14 +250,8 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Icon" minimumFontSize="17" id="kAI-Kg-t2w" customClass="IQDropDownTextField">
-                                <rect key="frame" x="20" y="221" width="280" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Rlc-ds-pyw">
-                                <rect key="frame" x="20" y="288" width="51" height="31"/>
+                                <rect key="frame" x="20" y="221" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
                         </subviews>
@@ -279,7 +266,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="iconField" destination="kAI-Kg-t2w" id="a0i-8p-o6b"/>
                         <outlet property="intervalField" destination="9zU-Ma-rru" id="I7z-1Y-4wP"/>
                         <outlet property="quantitySwitch" destination="Rlc-ds-pyw" id="hrE-W0-2Jl"/>
                         <outlet property="startDateField" destination="l0j-1L-3iZ" id="3MX-zD-37D"/>

@@ -13,15 +13,9 @@
         <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="activities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityLog" inverseName="habit" inverseEntity="ActivityLog" syncable="YES"/>
-        <relationship name="icon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Icon" syncable="YES"/>
-    </entity>
-    <entity name="Icon" representedClassName="Icon" syncable="YES">
-        <attribute name="icon_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
         <element name="ActivityLog" positionX="0" positionY="0" width="0" height="0"/>
         <element name="Habit" positionX="0" positionY="0" width="0" height="0"/>
-        <element name="Icon" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>
