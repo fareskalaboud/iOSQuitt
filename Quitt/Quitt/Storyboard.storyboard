@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="104" y="97"/>
         </scene>
-        <!--View Controller - Main-->
+        <!--Dashboard View Controller - Main-->
         <scene sceneID="ARu-1W-yH6">
             <objects>
-                <viewController id="KSE-Ld-jQC" sceneMemberID="viewController">
+                <viewController id="KSE-Ld-jQC" customClass="FMJDashboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8wl-Ml-u5d"/>
                         <viewControllerLayoutGuide type="bottom" id="KbG-wX-JK9"/>
@@ -65,10 +65,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YD-4d-Avk">
-                                <rect key="frame" x="0.0" y="65" width="320" height="204"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                            </scrollView>
                             <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jiV-gW-seS">
                                 <rect key="frame" x="141" y="260" width="39" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -79,13 +75,16 @@
                     <navigationItem key="navigationItem" title="Main" id="kQm-Rb-3ir">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KiX-Ka-016">
                             <connections>
-                                <segue destination="vSV-OE-bdB" kind="push" id="ECp-Fl-EqS"/>
+                                <action selector="addHabitMenu:" destination="KSE-Ld-jQC" id="27N-6F-eGu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="addHabitButton" destination="KiX-Ka-016" id="49h-n6-ei4"/>
                         <segue destination="Vdz-nf-YFQ" kind="push" id="Pcy-Ex-2OE"/>
                         <segue destination="x6N-LG-cPW" kind="push" id="WMj-y7-kub"/>
+                        <segue destination="vSV-OE-bdB" kind="push" identifier="templateChooser" id="1jS-fK-4V1"/>
+                        <segue destination="sKs-n6-SDJ" kind="push" identifier="customChooser" id="17M-Xg-rF5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d7c-0V-Muz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -109,7 +108,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="akh-ch-pJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="97"/>
+            <point key="canvasLocation" x="2171" y="97"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="2A9-TX-EFl">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="mHn-zA-bbY" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="g7c-bs-3Th">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MhJ-QZ-I0A">
+                            <size key="itemSize" width="319" height="200"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A1X-Wk-JcQ">
+                                <rect key="frame" x="1" y="0.0" width="319" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="319" height="200"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="mHn-zA-bbY" id="5ZA-al-uVi"/>
+                            <outlet property="delegate" destination="mHn-zA-bbY" id="dry-8L-gM9"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uC-nY-dj8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1155" y="851"/>
         </scene>
         <!--View Controller - Analytics-->
         <scene sceneID="Jg3-Lx-Td8">
@@ -129,6 +162,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGJ-J2-IZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1685" y="851"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="zaX-de-Uhy">
+            <objects>
+                <viewController id="sKs-n6-SDJ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="90W-tH-dhQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZfC-Xe-I2R"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kg5-MH-ANo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vXQ-UP-wuq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FdK-iC-FI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2171" y="-698"/>
         </scene>
         <!--Table View Controller - Templates-->
         <scene sceneID="1sm-MY-wEs">
@@ -157,7 +209,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OqF-i1-BfU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1685" y="-698"/>
+            <point key="canvasLocation" x="2171" y="-1408"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4hh-vt-2bv">
