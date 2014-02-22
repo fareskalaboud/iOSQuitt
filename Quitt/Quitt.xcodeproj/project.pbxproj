@@ -19,6 +19,7 @@
 		8C1500C918B8F21D00291E24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1500B118B8F21D00291E24 /* UIKit.framework */; };
 		8C1500D118B8F21D00291E24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C1500CF18B8F21D00291E24 /* InfoPlist.strings */; };
 		8C1500D318B8F21D00291E24 /* QuittTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1500D218B8F21D00291E24 /* QuittTests.m */; };
+		8CF8087018B8F3D700A5B458 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		8C1500CE18B8F21D00291E24 /* QuittTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuittTests-Info.plist"; sourceTree = "<group>"; };
 		8C1500D018B8F21D00291E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C1500D218B8F21D00291E24 /* QuittTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuittTests.m; sourceTree = "<group>"; };
+		8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 			children = (
 				8C1500BC18B8F21D00291E24 /* FMJAppDelegate.h */,
 				8C1500BD18B8F21D00291E24 /* FMJAppDelegate.m */,
+				8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */,
 				8C1500BF18B8F21D00291E24 /* Images.xcassets */,
 				8C1500B418B8F21D00291E24 /* Supporting Files */,
 			);
@@ -222,6 +225,7 @@
 			files = (
 				8C1500B818B8F21D00291E24 /* InfoPlist.strings in Resources */,
 				8C1500C018B8F21D00291E24 /* Images.xcassets in Resources */,
+				8CF8087018B8F3D700A5B458 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +367,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quitt/Quitt-Prefix.pch";
 				INFOPLIST_FILE = "Quitt/Quitt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -376,6 +381,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Quitt/Quitt-Prefix.pch";
 				INFOPLIST_FILE = "Quitt/Quitt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -442,6 +448,7 @@
 				8C1500D818B8F21D00291E24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8C1500D918B8F21D00291E24 /* Build configuration list for PBXNativeTarget "QuittTests" */ = {
 			isa = XCConfigurationList;
@@ -450,6 +457,7 @@
 				8C1500DB18B8F21D00291E24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
