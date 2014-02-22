@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B3116" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Eak-Cm-bHI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="Eak-Cm-bHI">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -48,21 +48,34 @@
             <objects>
                 <viewController id="KSE-Ld-jQC" customClass="FMJDashboardViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y3R-Mc-odq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lbt-Ry-31r">
-                                <rect key="frame" x="0.0" y="305" width="320" height="263"/>
+                                <rect key="frame" x="0.0" y="260" width="320" height="244"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drop Here" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iog-tN-czi">
+                                        <rect key="frame" x="121" y="111" width="79" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" id="jiV-gW-seS">
-                                <rect key="frame" x="141" y="260" width="39" height="37"/>
+                            <containerView contentMode="scaleToFill" id="BcG-RD-uUp">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </pageControl>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <connections>
+                                    <segue destination="mHn-zA-bbY" kind="embed" id="5sA-jd-nuC"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" title="Main" id="kQm-Rb-3ir">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KiX-Ka-016">
                             <connections>
@@ -143,20 +156,20 @@
             <objects>
                 <collectionViewController autoresizesArchivedViewToFullSize="NO" id="mHn-zA-bbY" sceneMemberID="viewController">
                     <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="g7c-bs-3Th">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="260"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MhJ-QZ-I0A">
-                            <size key="itemSize" width="319" height="200"/>
+                            <size key="itemSize" width="319" height="260"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="A1X-Wk-JcQ">
-                                <rect key="frame" x="1" y="0.0" width="319" height="200"/>
+                                <rect key="frame" x="1" y="0.0" width="319" height="260"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="319" height="200"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="319" height="260"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -187,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="1685" y="851"/>
         </scene>
-        <!--View Controller-->
+        <!--Create Custom Habit View Controller-->
         <scene sceneID="zaX-de-Uhy">
             <objects>
-                <viewController id="sKs-n6-SDJ" sceneMemberID="viewController">
+                <viewController id="sKs-n6-SDJ" customClass="FMJCreateCustomHabitViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kg5-MH-ANo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -214,6 +227,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="sKs-n6-SDJ" id="cl0-2H-W62"/>
+                                </connections>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" id="HXl-CM-n7s">
                                 <rect key="frame" x="20" y="197" width="280" height="162"/>
@@ -249,11 +265,28 @@ AQABAAEAAQAB//+dkAEA//+PgAAE//+dkAEI//+dkAEMUERUAFBTVABQV1QAUFBUAAAAAAEAAAABA
                                 <state key="normal" title="Add">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="addHabit:" destination="sKs-n6-SDJ" eventType="touchUpInside" id="JWm-BF-2bc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AcQ-8l-VW8">
+                                <rect key="frame" x="214" y="426" width="86" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Show Latest">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showLatestHabit:" destination="sKs-n6-SDJ" eventType="touchUpInside" id="RoY-Nk-6ve"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="vXQ-UP-wuq"/>
+                    <connections>
+                        <outlet property="startDatePicker" destination="HXl-CM-n7s" id="Bbs-4I-EYO"/>
+                        <outlet property="titleField" destination="JJI-xe-5m2" id="WqO-tB-ncC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FdK-iC-FI1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
