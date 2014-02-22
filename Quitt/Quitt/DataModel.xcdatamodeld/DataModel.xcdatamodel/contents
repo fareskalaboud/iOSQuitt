@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="ActivityLog" syncable="YES">
+    <entity name="ActivityLog" representedClassName="ActivityLog" syncable="YES">
         <attribute name="log_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="log_time" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="quantity" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <relationship name="habit" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Habit" inverseName="activities" inverseEntity="Habit" syncable="YES"/>
     </entity>
-    <entity name="Habit" syncable="YES">
+    <entity name="Habit" representedClassName="Habit" syncable="YES">
         <attribute name="habit_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="interval" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="requires_quantity" optional="YES" attributeType="Boolean" syncable="YES"/>
@@ -15,13 +15,13 @@
         <relationship name="activities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityLog" inverseName="habit" inverseEntity="ActivityLog" syncable="YES"/>
         <relationship name="icon" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Icon" syncable="YES"/>
     </entity>
-    <entity name="Icon" syncable="YES">
+    <entity name="Icon" representedClassName="Icon" syncable="YES">
         <attribute name="icon_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
         <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Icon" positionX="205" positionY="240" width="128" height="75"/>
-        <element name="Habit" positionX="459" positionY="123" width="128" height="133"/>
-        <element name="ActivityLog" positionX="682" positionY="162" width="119" height="103"/>
+        <element name="ActivityLog" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Habit" positionX="0" positionY="0" width="0" height="0"/>
+        <element name="Icon" positionX="0" positionY="0" width="0" height="0"/>
     </elements>
 </model>

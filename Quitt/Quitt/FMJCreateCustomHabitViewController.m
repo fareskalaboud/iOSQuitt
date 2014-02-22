@@ -9,11 +9,16 @@
 #import "FMJCreateCustomHabitViewController.h"
 
 #import "FMJAppDelegate.h"
+#import "IQDropDownTextField.h"
+
+#import "Habit.h"
 
 @interface FMJCreateCustomHabitViewController () <UITextFieldDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *titleField;
-@property (strong, nonatomic) IBOutlet UIDatePicker *startDatePicker;
-
+@property (strong, nonatomic) IBOutlet IQDropDownTextField *startDateField;
+@property (strong, nonatomic) IBOutlet IQDropDownTextField *intervalField;
+@property (strong, nonatomic) IBOutlet IQDropDownTextField *iconField;
+@property (strong, nonatomic) IBOutlet UISwitch *quantitySwitch;
 @end
 
 @implementation FMJCreateCustomHabitViewController
@@ -23,12 +28,36 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self.startDatePicker setDate:[NSDate date]];
+    [self.startDateField setInputAccessoryView:[self dropDownToolbar]];
+    [self.startDateField setDropDownMode:IQDropDownModeDatePicker];
+    
+    [self.intervalField setInputAccessoryView:[self dropDownToolbar]];
+    [self.intervalField setItemList:@[@"Weekly", @"Bi-Weekly"]];
+    [self.intervalField setDropDownMode:IQDropDownModeTextPicker];
+    
+    [self.iconField setInputAccessoryView:[self dropDownToolbar]];
+    [self.iconField setItemList:@[@"Icon 1", @"Icon 2", @"Icon 3"]];
+    [self.iconField setDropDownMode:IQDropDownModeTextPicker];
+}
+
+- (UIToolbar *)dropDownToolbar {
+    UIToolbar *toolbar = [[UIToolbar alloc] init];
+    [toolbar setBarStyle:UIBarStyleBlackTranslucent];
+    [toolbar sizeToFit];
+    UIBarButtonItem *buttonflexible = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *buttonDone = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneClicked:)];
+    [toolbar setItems:[NSArray arrayWithObjects:buttonflexible,buttonDone, nil]];
+    return toolbar;
 }
 
 - (IBAction)addHabit:(id)sender {
     
-    NSNumber *week = [NSNumber numberWithInt:60 * 60 * 24 * 7];
+    NSNumber *weekInterval = [NSNumber numberWithInt:60 * 60 * 24 * 7];
+    NSNumber *biweeklyInterval = [NSNumber numberWithInt:weekInterval.intValue * 2];
+    
+    NSNumber *interval = weekInterval;
+    NSNumber *switchBool = [NSNumber numberWithBool:self.quantitySwitch.isOn];
+    //NSDate *startDate = [NSDate ]
     
     FMJAppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -36,13 +65,17 @@
     NSManagedObject *newHabit = [NSEntityDescription insertNewObjectForEntityForName:@"Habit"
                                                               inManagedObjectContext:context];
     [newHabit setValue: self.titleField.text forKey:@"title"];
-    [newHabit setValue: self.startDatePicker.date forKey:@"start_date"];
-    [newHabit setValue: week forKey:@"interval"];
-    [newHabit setValue: NO forKey:@"requires_quantity"];
+    //[newHabit setValue: self.startDateField.text forKey:@"start_date"];
+    [newHabit setValue: interval forKey:@"interval"];
+    [newHabit setValue: switchBool forKey:@"requires_quantity"];
     [self.titleField setText:@""];
-    [self.startDatePicker setDate:[NSDate date]];
-    
+    [self.startDateField setText:@""];
+    [self.intervalField setText:@""];
     [appDelegate saveContext];
+}
+
+- (void)doneClicked:(UIBarButtonItem*)button {
+    [self.view endEditing:YES];
 }
 
 - (IBAction)showLatestHabit:(id)sender {
