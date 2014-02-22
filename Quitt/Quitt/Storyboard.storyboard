@@ -52,7 +52,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" id="lbt-Ry-31r">
-                                <rect key="frame" x="0.0" y="287" width="320" height="281"/>
+                                <rect key="frame" x="0.0" y="305" width="320" height="263"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
