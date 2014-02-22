@@ -213,8 +213,7 @@
 				8CF808C118B934EF00A5B458 /* IQDropDownTextField.h */,
 				8CF808C218B934EF00A5B458 /* IQDropDownTextField.m */,
 			);
-			name = IQDropDownTextField;
-			path = "../../../../../Desktop/IQDropDownTextField-master/IQDropDownTextField";
+			path = IQDropDownTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
