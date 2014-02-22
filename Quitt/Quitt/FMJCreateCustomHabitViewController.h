@@ -10,4 +10,7 @@
 
 @interface FMJCreateCustomHabitViewController : UIViewController
 
+- (IBAction)addHabit:(id)sender;
+- (IBAction)showLatestHabit:(id)sender;
+
 @end

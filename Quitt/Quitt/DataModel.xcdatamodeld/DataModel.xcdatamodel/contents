@@ -8,7 +8,8 @@
     </entity>
     <entity name="Habit" syncable="YES">
         <attribute name="habit_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
-        <attribute name="interval" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="interval" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="requires_quantity" optional="YES" attributeType="Boolean" syncable="YES"/>
         <attribute name="start_date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="activities" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ActivityLog" inverseName="habit" inverseEntity="ActivityLog" syncable="YES"/>
