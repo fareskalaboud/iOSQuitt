@@ -24,6 +24,7 @@
 		8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */; };
 		8CF8087918B90EA400A5B458 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF8087818B90EA400A5B458 /* CoreData.framework */; };
 		8CF8087C18B918C900A5B458 /* FMJCreateCustomHabitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087B18B918C900A5B458 /* FMJCreateCustomHabitViewController.m */; };
+		B1F900FD18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1F900FC18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		8CF8087818B90EA400A5B458 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8CF8087A18B918C900A5B458 /* FMJCreateCustomHabitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJCreateCustomHabitViewController.h; sourceTree = "<group>"; };
 		8CF8087B18B918C900A5B458 /* FMJCreateCustomHabitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJCreateCustomHabitViewController.m; sourceTree = "<group>"; };
+		B1F900FB18B92B7A002EA0C3 /* FMJHabitOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJHabitOptionsViewController.h; sourceTree = "<group>"; };
+		B1F900FC18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJHabitOptionsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +172,8 @@
 				8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */,
 				8CF8087A18B918C900A5B458 /* FMJCreateCustomHabitViewController.h */,
 				8CF8087B18B918C900A5B458 /* FMJCreateCustomHabitViewController.m */,
+				B1F900FB18B92B7A002EA0C3 /* FMJHabitOptionsViewController.h */,
+				B1F900FC18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */,
 				8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */,
 				8C1500BE18B8F21D00291E24 /* FMJAppDelegate.m in Sources */,
+				B1F900FD18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m in Sources */,
 				8CF8087C18B918C900A5B458 /* FMJCreateCustomHabitViewController.m in Sources */,
 				8C1500BA18B8F21D00291E24 /* main.m in Sources */,
 			);
