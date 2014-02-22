@@ -124,6 +124,7 @@
 				8C1500BC18B8F21D00291E24 /* FMJAppDelegate.h */,
 				8C1500BD18B8F21D00291E24 /* FMJAppDelegate.m */,
 				8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */,
+				8CF808BE18B92BE600A5B458 /* Data Models */,
 				8CF8087118B8FB7D00A5B458 /* View Controllers */,
 				8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */,
 				8C1500BF18B8F21D00291E24 /* Images.xcassets */,
@@ -170,6 +171,13 @@
 				8CF8087B18B918C900A5B458 /* FMJCreateCustomHabitViewController.m */,
 			);
 			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8CF808BE18B92BE600A5B458 /* Data Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Data Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
