@@ -21,6 +21,8 @@
 		8C1500D318B8F21D00291E24 /* QuittTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1500D218B8F21D00291E24 /* QuittTests.m */; };
 		8CF8087018B8F3D700A5B458 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */; };
 		8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */; };
+		8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */; };
+		8CF8087918B90EA400A5B458 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CF8087818B90EA400A5B458 /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8CF8087218B8FCC300A5B458 /* FMJDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJDashboardViewController.h; sourceTree = "<group>"; };
 		8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJDashboardViewController.m; sourceTree = "<group>"; };
+		8CF8087618B90C0500A5B458 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		8CF8087818B90EA400A5B458 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CF8087918B90EA400A5B458 /* CoreData.framework in Frameworks */,
 				8C1500B018B8F21D00291E24 /* CoreGraphics.framework in Frameworks */,
 				8C1500B218B8F21D00291E24 /* UIKit.framework in Frameworks */,
 				8C1500AE18B8F21D00291E24 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		8C1500AC18B8F21D00291E24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8CF8087818B90EA400A5B458 /* CoreData.framework */,
 				8C1500AD18B8F21D00291E24 /* Foundation.framework */,
 				8C1500AF18B8F21D00291E24 /* CoreGraphics.framework */,
 				8C1500B118B8F21D00291E24 /* UIKit.framework */,
@@ -114,6 +120,7 @@
 			children = (
 				8C1500BC18B8F21D00291E24 /* FMJAppDelegate.h */,
 				8C1500BD18B8F21D00291E24 /* FMJAppDelegate.m */,
+				8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */,
 				8CF8087118B8FB7D00A5B458 /* View Controllers */,
 				8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */,
 				8C1500BF18B8F21D00291E24 /* Images.xcassets */,
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */,
+				8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */,
 				8C1500BE18B8F21D00291E24 /* FMJAppDelegate.m in Sources */,
 				8C1500BA18B8F21D00291E24 /* main.m in Sources */,
 			);
@@ -474,6 +482,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8CF8087618B90C0500A5B458 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 8CF8087618B90C0500A5B458 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 8C1500A218B8F21D00291E24 /* Project object */;
 }

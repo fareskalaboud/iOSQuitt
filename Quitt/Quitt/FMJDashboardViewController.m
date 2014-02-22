@@ -38,9 +38,9 @@
 - (void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
     
     if (buttonIndex == 0) { // Template Chooser
-        
+        [self performSegueWithIdentifier:@"templateChooser" sender:self];
     } else if (buttonIndex == 1) { // Custom Chooser
-        
+        [self performSegueWithIdentifier:@"customChooser" sender:self];
     }
 }
 
