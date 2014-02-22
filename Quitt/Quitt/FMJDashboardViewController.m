@@ -21,14 +21,8 @@
     
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 - (IBAction)addHabitMenu:(id)sender {
-    UIActionSheet *addHabitSheet = [[UIActionSheet alloc] initWithTitle:@"Add a Habit"
+    UIActionSheet *addHabitSheet = [[UIActionSheet alloc] initWithTitle:nil
                                                                delegate:self
                                                       cancelButtonTitle:@"Cancel"
                                                  destructiveButtonTitle:nil otherButtonTitles:@"Use Template Habit", @"Create Custom Habit", nil];

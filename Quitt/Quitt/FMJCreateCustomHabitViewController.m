@@ -30,11 +30,11 @@
 	// Do any additional setup after loading the view.
     
     self.dropDownDateFormatter = [[NSDateFormatter alloc] init];
-    [self.dropDownDateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    [self.dropDownDateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    [self.dropDownDateFormatter setDateStyle:NSDateFormatterShortStyle];
+    [self.dropDownDateFormatter setTimeStyle:NSDateFormatterShortStyle];
     
     [self.startDateField setInputAccessoryView:[self dropDownToolbar]];
-    [self.startDateField setDropDownMode:IQDropDownModeDatePicker];
+    [self.startDateField setDropDownMode:IQDropDownModeDateAndTimePicker];
     
     [self.intervalField setInputAccessoryView:[self dropDownToolbar]];
     [self.intervalField setItemList:@[@"Weekly", @"Bi-Weekly"]];
