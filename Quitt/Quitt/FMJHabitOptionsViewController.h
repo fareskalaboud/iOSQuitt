@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FMJHabitOptionsViewController : NSObject
+@interface FMJHabitOptionsViewController : UIViewController
     
 @end
