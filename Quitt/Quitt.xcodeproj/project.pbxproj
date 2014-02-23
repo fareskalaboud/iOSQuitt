@@ -25,11 +25,10 @@
 		8C50351918BA0FEB00D0F88A /* drinking.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C50351618BA0FEB00D0F88A /* drinking.png */; };
 		8C50351A18BA0FEB00D0F88A /* smoking.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C50351718BA0FEB00D0F88A /* smoking.png */; };
 		8C50351B18BA0FEB00D0F88A /* swearing.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C50351818BA0FEB00D0F88A /* swearing.png */; };
-		8C50351F18BA105F00D0F88A /* JDDroppableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50351E18BA105F00D0F88A /* JDDroppableView.m */; };
-		8C50352218BA238800D0F88A /* UACoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50352118BA238800D0F88A /* UACoreDataTVC.m */; };
 		8C50352518BA23A200D0F88A /* FMJReportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50352418BA23A200D0F88A /* FMJReportViewController.m */; };
 		8C50352E18BA295D00D0F88A /* Habit.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50352D18BA295D00D0F88A /* Habit.m */; };
 		8C50353118BA295E00D0F88A /* ActivityLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50353018BA295E00D0F88A /* ActivityLog.m */; };
+		8CC42AAB18BA2D210073CB3C /* UACoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CC42AAA18BA2D210073CB3C /* UACoreDataTVC.m */; };
 		8CF8087018B8F3D700A5B458 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */; };
 		8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */; };
 		8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */; };
@@ -75,16 +74,14 @@
 		8C50351618BA0FEB00D0F88A /* drinking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = drinking.png; path = ../../../../../Desktop/imgs/drinking.png; sourceTree = "<group>"; };
 		8C50351718BA0FEB00D0F88A /* smoking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smoking.png; path = ../../../../../Desktop/imgs/smoking.png; sourceTree = "<group>"; };
 		8C50351818BA0FEB00D0F88A /* swearing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = swearing.png; path = ../../../../../Desktop/imgs/swearing.png; sourceTree = "<group>"; };
-		8C50351D18BA105F00D0F88A /* JDDroppableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JDDroppableView.h; sourceTree = "<group>"; };
-		8C50351E18BA105F00D0F88A /* JDDroppableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JDDroppableView.m; sourceTree = "<group>"; };
-		8C50352018BA238800D0F88A /* UACoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UACoreDataTVC.h; sourceTree = "<group>"; };
-		8C50352118BA238800D0F88A /* UACoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UACoreDataTVC.m; sourceTree = "<group>"; };
 		8C50352318BA23A200D0F88A /* FMJReportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJReportViewController.h; sourceTree = "<group>"; };
 		8C50352418BA23A200D0F88A /* FMJReportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJReportViewController.m; sourceTree = "<group>"; };
 		8C50352C18BA295D00D0F88A /* Habit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Habit.h; sourceTree = "<group>"; };
 		8C50352D18BA295D00D0F88A /* Habit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Habit.m; sourceTree = "<group>"; };
 		8C50352F18BA295E00D0F88A /* ActivityLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityLog.h; sourceTree = "<group>"; };
 		8C50353018BA295E00D0F88A /* ActivityLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityLog.m; sourceTree = "<group>"; };
+		8CC42AA918BA2D210073CB3C /* UACoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UACoreDataTVC.h; sourceTree = "<group>"; };
+		8CC42AAA18BA2D210073CB3C /* UACoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UACoreDataTVC.m; sourceTree = "<group>"; };
 		8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8CF8087218B8FCC300A5B458 /* FMJDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJDashboardViewController.h; sourceTree = "<group>"; };
 		8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJDashboardViewController.m; sourceTree = "<group>"; };
@@ -204,8 +201,8 @@
 		8C50350818B95D9200D0F88A /* Core Data View Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				8C50352018BA238800D0F88A /* UACoreDataTVC.h */,
-				8C50352118BA238800D0F88A /* UACoreDataTVC.m */,
+				8CC42AA918BA2D210073CB3C /* UACoreDataTVC.h */,
+				8CC42AAA18BA2D210073CB3C /* UACoreDataTVC.m */,
 				8C50350F18B96EE400D0F88A /* CoreDataUICollectionViewController.h */,
 				8C50351018B96EE400D0F88A /* CoreDataUICollectionViewController.m */,
 			);
@@ -220,15 +217,6 @@
 				8C50351818BA0FEB00D0F88A /* swearing.png */,
 			);
 			name = images;
-			sourceTree = "<group>";
-		};
-		8C50351C18BA105F00D0F88A /* DroppableView */ = {
-			isa = PBXGroup;
-			children = (
-				8C50351D18BA105F00D0F88A /* JDDroppableView.h */,
-				8C50351E18BA105F00D0F88A /* JDDroppableView.m */,
-			);
-			path = DroppableView;
 			sourceTree = "<group>";
 		};
 		8CF8087118B8FB7D00A5B458 /* View Controllers */ = {
@@ -264,7 +252,6 @@
 		8CF808BF18B934D900A5B458 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				8C50351C18BA105F00D0F88A /* DroppableView */,
 				8CF808C018B934EF00A5B458 /* IQDropDownTextField */,
 			);
 			name = Dependencies;
@@ -379,7 +366,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8C50352218BA238800D0F88A /* UACoreDataTVC.m in Sources */,
+				8CC42AAB18BA2D210073CB3C /* UACoreDataTVC.m in Sources */,
 				8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */,
 				8C50353118BA295E00D0F88A /* ActivityLog.m in Sources */,
 				8CF808C318B934EF00A5B458 /* IQDropDownTextField.m in Sources */,
@@ -390,7 +377,6 @@
 				8C1500BE18B8F21D00291E24 /* FMJAppDelegate.m in Sources */,
 				B1F900FD18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m in Sources */,
 				8CF8087C18B918C900A5B458 /* FMJCreateCustomHabitViewController.m in Sources */,
-				8C50351F18BA105F00D0F88A /* JDDroppableView.m in Sources */,
 				8C50351418B9DBA900D0F88A /* FMJTemplateHabitViewController.m in Sources */,
 				8C50352E18BA295D00D0F88A /* Habit.m in Sources */,
 				8C1500BA18B8F21D00291E24 /* main.m in Sources */,
