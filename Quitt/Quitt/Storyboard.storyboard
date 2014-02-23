@@ -12,9 +12,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchIcon" id="3hO-ep-zwe">
-                                <rect key="frame" x="62" y="48" width="197" height="188"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashscreen.png" id="vTt-iy-oz1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dl8-nz-pVj">
                                 <rect key="frame" x="90" y="397" width="140" height="42"/>
@@ -27,13 +27,6 @@
                                     <segue destination="5bQ-nJ-oFr" kind="modal" id="WJD-ed-gre"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Well Done! You have taken the first step towards breaking your habits and improving your lifestyle! Ready to get started? " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2zl-2O-aHk">
-                                <rect key="frame" x="30" y="283" width="261" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.41176470588235292" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -397,7 +390,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="launchIcon" width="596" height="596"/>
+        <image name="splashscreen.png" width="2012" height="3103"/>
         <image name="swearing.png" width="512" height="266"/>
     </resources>
     <color key="tintColor" red="0.0" green="0.41176470590000003" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
