@@ -7,7 +7,7 @@
 
 #import "IQDropDownTextField.h"
 
-@interface IQDropDownTextField ()<UITextFieldDelegate,UIPickerViewDelegate, UIPickerViewDataSource>
+@interface IQDropDownTextField () <UITextFieldDelegate,UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end
 

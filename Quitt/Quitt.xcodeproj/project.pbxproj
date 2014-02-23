@@ -19,6 +19,9 @@
 		8C1500C918B8F21D00291E24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1500B118B8F21D00291E24 /* UIKit.framework */; };
 		8C1500D118B8F21D00291E24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8C1500CF18B8F21D00291E24 /* InfoPlist.strings */; };
 		8C1500D318B8F21D00291E24 /* QuittTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1500D218B8F21D00291E24 /* QuittTests.m */; };
+		8C50350B18B95DBA00D0F88A /* UACoreDataTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50350A18B95DBA00D0F88A /* UACoreDataTVC.m */; };
+		8C50350E18B9639500D0F88A /* FMJHabitCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50350D18B9639500D0F88A /* FMJHabitCollectionViewController.m */; };
+		8C50351118B96EE400D0F88A /* CoreDataUICollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C50351018B96EE400D0F88A /* CoreDataUICollectionViewController.m */; };
 		8CF8087018B8F3D700A5B458 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */; };
 		8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */; };
 		8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CF8087518B90C0500A5B458 /* DataModel.xcdatamodeld */; };
@@ -57,6 +60,12 @@
 		8C1500CE18B8F21D00291E24 /* QuittTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuittTests-Info.plist"; sourceTree = "<group>"; };
 		8C1500D018B8F21D00291E24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8C1500D218B8F21D00291E24 /* QuittTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuittTests.m; sourceTree = "<group>"; };
+		8C50350918B95DBA00D0F88A /* UACoreDataTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UACoreDataTVC.h; path = "../../../Unitu Mobile/Unitu Mobile/Data Model/UACoreDataTVC.h"; sourceTree = "<group>"; };
+		8C50350A18B95DBA00D0F88A /* UACoreDataTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UACoreDataTVC.m; path = "../../../Unitu Mobile/Unitu Mobile/Data Model/UACoreDataTVC.m"; sourceTree = "<group>"; };
+		8C50350C18B9639500D0F88A /* FMJHabitCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJHabitCollectionViewController.h; sourceTree = "<group>"; };
+		8C50350D18B9639500D0F88A /* FMJHabitCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJHabitCollectionViewController.m; sourceTree = "<group>"; };
+		8C50350F18B96EE400D0F88A /* CoreDataUICollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataUICollectionViewController.h; sourceTree = "<group>"; };
+		8C50351018B96EE400D0F88A /* CoreDataUICollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataUICollectionViewController.m; sourceTree = "<group>"; };
 		8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8CF8087218B8FCC300A5B458 /* FMJDashboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMJDashboardViewController.h; sourceTree = "<group>"; };
 		8CF8087318B8FCC300A5B458 /* FMJDashboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMJDashboardViewController.m; sourceTree = "<group>"; };
@@ -139,6 +148,7 @@
 				8CF808BE18B92BE600A5B458 /* Data Models */,
 				8CF8087118B8FB7D00A5B458 /* View Controllers */,
 				8CF8086F18B8F3D700A5B458 /* Storyboard.storyboard */,
+				8C50350818B95D9200D0F88A /* Core Data View Extensions */,
 				8CF808BF18B934D900A5B458 /* Dependencies */,
 				8C1500BF18B8F21D00291E24 /* Images.xcassets */,
 				8C1500B418B8F21D00291E24 /* Supporting Files */,
@@ -175,6 +185,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8C50350818B95D9200D0F88A /* Core Data View Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8C50350918B95DBA00D0F88A /* UACoreDataTVC.h */,
+				8C50350A18B95DBA00D0F88A /* UACoreDataTVC.m */,
+				8C50350F18B96EE400D0F88A /* CoreDataUICollectionViewController.h */,
+				8C50351018B96EE400D0F88A /* CoreDataUICollectionViewController.m */,
+			);
+			name = "Core Data View Extensions";
+			sourceTree = "<group>";
+		};
 		8CF8087118B8FB7D00A5B458 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -184,6 +205,8 @@
 				8CF8087B18B918C900A5B458 /* FMJCreateCustomHabitViewController.m */,
 				B1F900FB18B92B7A002EA0C3 /* FMJHabitOptionsViewController.h */,
 				B1F900FC18B92B7A002EA0C3 /* FMJHabitOptionsViewController.m */,
+				8C50350C18B9639500D0F88A /* FMJHabitCollectionViewController.h */,
+				8C50350D18B9639500D0F88A /* FMJHabitCollectionViewController.m */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -313,8 +336,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C50350B18B95DBA00D0F88A /* UACoreDataTVC.m in Sources */,
 				8CF8087418B8FCC300A5B458 /* FMJDashboardViewController.m in Sources */,
 				8CF808C318B934EF00A5B458 /* IQDropDownTextField.m in Sources */,
+				8C50351118B96EE400D0F88A /* CoreDataUICollectionViewController.m in Sources */,
+				8C50350E18B9639500D0F88A /* FMJHabitCollectionViewController.m in Sources */,
 				8CF808C618B93CBE00A5B458 /* Habit.m in Sources */,
 				8CF8087718B90C0500A5B458 /* DataModel.xcdatamodeld in Sources */,
 				8C1500BE18B8F21D00291E24 /* FMJAppDelegate.m in Sources */,
