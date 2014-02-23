@@ -82,6 +82,7 @@
     [self.quantitySwitch setOn:NO];
     
     [appDelegate saveContext];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)doneClicked:(UIBarButtonItem *)button {
