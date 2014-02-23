@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FMJDashboardViewController : UIViewController
+#import "JDDroppableView.h"
+
+@interface FMJDashboardViewController : UIViewController <JDDroppableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UIView *dropView;
 
 - (IBAction)addHabitMenu:(id)sender;
 

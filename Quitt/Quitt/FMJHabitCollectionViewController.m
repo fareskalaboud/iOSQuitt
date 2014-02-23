@@ -10,8 +10,9 @@
 
 #import "FMJAppDelegate.h"
 #import "Habit.h"
+#import "JDDroppableView.h"
 
-@interface FMJHabitCollectionViewController() <UICollectionViewDelegateFlowLayout>
+@interface FMJHabitCollectionViewController() <UICollectionViewDelegateFlowLayout, UIScrollViewDelegate>
 @property (strong, nonatomic) NSDateFormatter *dateFormatter;
 @end
 
@@ -19,6 +20,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //self.collectionView.userInteractionEnabled = NO;
+	self.collectionView.canCancelContentTouches = NO;
     
     self.dateFormatter = [[NSDateFormatter alloc] init];
     [self.dateFormatter setDateStyle:NSDateFormatterShortStyle];
@@ -90,7 +94,7 @@
     NSDate *date = [NSDate date];
     NSDate *start_date = [habit start_date];
     
-    
+    //NSLog(@"%ld", (long)[self.fetchedResultsController indexPathForObject:habit].section);
     
     NSTimeInterval diff = [date timeIntervalSinceDate:start_date];
     
@@ -103,7 +107,21 @@
     NSString *dateString = [self.dateFormatter stringFromDate:finalDate];
     [intervalLabel setText:[NSString stringWithFormat:@"Next Report on %@", dateString]];
     
+    JDDroppableView *dropView = (JDDroppableView *)[cell viewWithTag:3];
+    [dropView addDropTarget:self.parent.dropView];
+    dropView.layer.cornerRadius = 3.0;
+    dropView.delegate = self.parent;
+    
     return cell;
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGFloat pageWidth = self.collectionView.frame.size.width;
+    NSNumber *integer = @(self.collectionView.contentOffset.x / pageWidth);
+    NSLog(@"%@", integer);
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:integer.integerValue inSection:0];
+    self.currentHabit = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    //NSLog(@"%@", self.currentHabit.title);
 }
 
 @end

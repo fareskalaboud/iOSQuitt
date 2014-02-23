@@ -10,7 +10,14 @@
 
 #import "CoreDataUICollectionViewController.h"
 
+#import "FMJDashboardViewController.h"
+
+@class Habit;
+
 @interface FMJHabitCollectionViewController : CoreDataUICollectionViewController
+
+@property (nonatomic) FMJDashboardViewController *parent;
+@property (nonatomic, strong) Habit *currentHabit;
 
 @property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
 
